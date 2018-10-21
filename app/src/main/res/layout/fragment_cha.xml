@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".Fragment.Cha">
+
+    <RelativeLayout
+
+        android:id="@+id/container"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linEdit"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:id="@+id/tilMessage"
+                android:layout_weight="4"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/messageEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Message" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/chatSendButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_send_black_24dp"
+                app:fabSize="normal" />
+
+        </LinearLayout>
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/messagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linEdit"
+            android:layout_marginBottom="1dp"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:transcriptMode="alwaysScroll" />
+
+
+    </RelativeLayout>
+
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        fancy:fb_radius="30dp"
+        android:layout_centerInParent="true"
+        fancy:fb_text="Find People"
+        android:background="@color/colorAccent"
+        fancy:fb_defaultColor="@color/colorPrimary"
+        android:padding="15dp"
+        fancy:fb_textColor="#FFFFFF"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

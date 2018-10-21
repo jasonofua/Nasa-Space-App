@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="65dp"
+    tools:context=".Fragment.Home">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:id="@+id/txtFire"
+        android:background="@color/dot_dark_screen1"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="FIRE"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:id="@+id/txtFlood"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#E53935"
+        android:textSize="18sp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="FLOOD"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:id="@+id/txtEarthQuake"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:background="#09c"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="EARTHQUAKE"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:id="@+id/txtTornado"
+        android:textSize="18sp"
+        android:background="#a854d4"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="TORNADO"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="HURRICANE"
+        android:id="@+id/txtHurricane"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="#c873f4"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

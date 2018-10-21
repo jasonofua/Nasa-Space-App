@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nested"
+    android:padding="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.PreDetails"
+    tools:showIn="@layout/activity_pre_details">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:background="#c6bdbd"
+           android:elevation="6dp"
+           android:id="@+id/documentCard"
+           android:layout_marginBottom="13dp"
+           android:layout_height="80dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <CheckBox android:id="@+id/checkDocuments"
+                   android:layout_width="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:layout_height="wrap_content"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:textSize="18sp"
+                   android:textStyle="bold"
+                   android:layout_marginTop="20dp"
+                   android:text="DOCUMENTS/ CERTIFICATES"/>
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_gravity="bottom|end"
+               android:text="Priority: High"
+               android:layout_marginBottom="10dp"
+               android:textSize="16sp"
+               android:layout_marginRight="20sp"
+               android:layout_height="wrap_content" />
+
+       </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           android:background="#c6bdbd"
+           android:elevation="6dp"
+           android:id="@+id/waterCard"
+           android:layout_marginBottom="13dp"
+           android:layout_width="match_parent"
+           android:layout_height="80dp">
+
+           <LinearLayout
+
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <CheckBox android:id="@+id/checkWaterFood"
+                   android:layout_width="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:layout_height="wrap_content"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:textSize="18sp"
+                   android:textStyle="bold"
+                   android:layout_marginTop="20dp"
+                   android:text="WATER/ FOOD"/>
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_gravity="bottom|end"
+               android:text="Priority: High"
+               android:layout_marginBottom="10dp"
+               android:textSize="16sp"
+               android:layout_marginRight="20sp"
+               android:layout_height="wrap_content" />
+
+       </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           android:background="#c6bdbd"
+           android:elevation="6dp"
+           android:layout_marginBottom="13dp"
+           android:id="@+id/clothCard"
+           android:layout_width="match_parent"
+           android:layout_height="80dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <CheckBox android:id="@+id/checkCloths"
+                   android:layout_width="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:layout_height="wrap_content"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:textSize="18sp"
+                   android:textStyle="bold"
+                   android:layout_marginTop="20dp"
+                   android:text="CLOTHS"/>
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_gravity="bottom|end"
+               android:text="Priority: High"
+               android:layout_marginBottom="10dp"
+               android:textSize="16sp"
+               android:layout_marginRight="20sp"
+               android:layout_height="wrap_content" />
+
+       </androidx.cardview.widget.CardView>
+
+       <mehdi.sakout.fancybuttons.FancyButton
+           android:layout_marginTop="50dp"
+           android:layout_gravity="center_horizontal"
+           android:id="@+id/btnCompleteList"
+           android:layout_width="wrap_content"
+           fancy:fb_radius="30dp"
+           fancy:fb_text="List Completed"
+           android:background="@color/colorAccent"
+           fancy:fb_defaultColor="@color/colorPrimary"
+           android:padding="15dp"
+           fancy:fb_textColor="#FFFFFF"
+           android:layout_height="wrap_content"/>
+
+   </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
